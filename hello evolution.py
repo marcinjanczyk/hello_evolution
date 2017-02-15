@@ -147,3 +147,5 @@ def startEvolution(targetString = "Hello-evolution", totalPopulation = 1000, def
     endTime = time.time()
     print("I found best solution in ", generation-1, "generations !")
     print("Solution has been found in ", round(endTime - starTime,2), "sec")
+
+# END
