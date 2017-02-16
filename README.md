@@ -3,6 +3,7 @@
 
 You choose target string, and genetic algorithm steadily crawls to find your string.
 
+
 Sample input:
 ```
 startEvolution(targetString = "Hello-Evolution", totalPopulation = 1000, mutationRate = 0.05)
@@ -19,7 +20,7 @@ Generation | Fitness | Phenotype       | MutationRate
          5 |    0.87 | Hello-evglutiom |         0.05
          6 |    0.93 | Hello-evglution |         0.05
          7 |     1.0 | Hello-evolution |         0.12
-I found best solution in  7 generations !
+I found best solution in  7 generations, for string 15 characters long !
 Solution has been found in  1.17 sec
 ```
 Additional to target string you can specify how big will be total population and what is minimal probability of mutation at each crossover.
@@ -29,7 +30,15 @@ To run on your machine:
 Run script on your machine
 Use startevolution function to start evolving
 
+I would say it works quite fast, and thanks to dynmically calculate muation rate it can provide solution for long string, e.g.:
+```
+startEvolution('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam venenatis euismod pellentesque. Etiam id sem eu arcu maximus hendrerit et nec orci. Proin finibus maximus lacus, quis euismod nulla semper in.', 
+100, 0.05)
 
+
+I found best solution in  6602 generations, for string  206  characters long!
+Solution has been found in  65.96 sec
+```
 
 How it works ?
 
