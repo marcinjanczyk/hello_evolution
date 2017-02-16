@@ -32,6 +32,7 @@ Use startevolution function to start evolving
 
 
 How it works ?
+
 0. Algorithms generates ```totalPopulation``` number of string of length equal to ```targetString```.
 
 1. Based on fitness function (expressed as proportion of correct letters in correct position to total length of string), best 20% of population is selected
